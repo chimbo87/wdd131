@@ -1,0 +1,166 @@
+/* Base Styles */
+:root {
+    --primary-color: #1B4965;
+    --secondary-color: #62B6CB;
+    --background-color: #fff;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+}
+header h1 span{
+color: rgb(255, 208, 0);
+}
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: #333;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.profile-content-head{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    margin-bottom: 20px;
+    border-radius: 8px 8px 0px 0px;
+}
+.profile-content-head h2{
+    color: #fff;
+}
+.profile-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 10px;
+}
+.card ul{
+    padding: 15px;
+}
+.profile-content img {
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.location-info {
+    margin-top: 1.5rem;
+}
+
+.flag {
+    width: 100px;
+    margin-top: 1rem;
+}
+
+/* Resource Links */
+.card ul {
+    list-style: none;
+}
+
+.card li {
+    margin-bottom: 0.8rem;
+}
+
+.card a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.card a:hover {
+    color: var(--secondary-color);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .profile-content img {
+        margin: 0 auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
