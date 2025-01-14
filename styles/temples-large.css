@@ -1,0 +1,37 @@
+/* Styles for larger screens */
+@media screen and (min-width: 500px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block !important; 
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+        font-size: 20px;
+        width: 250px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
