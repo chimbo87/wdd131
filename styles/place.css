@@ -30,21 +30,21 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   padding: 2rem;
-  background-image: url("/images/moritus.png");
+  background-image: url("/images/moritus.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.top-image{
-    display: none;
-    width: 100%;
-    height: auto;
+.top-image {
+  display: none;
+  width: 100%;
+  height: auto;
 }
-.top-image img{
+.top-image img {
   border-radius: 4px;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 .data,
 .weather {
@@ -73,8 +73,15 @@ td {
 }
 
 .weather-icon {
-  font-size: 2rem;
-  text-align: start;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.weather-icon img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
 }
 
 /* Footer Styles */
@@ -88,29 +95,31 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        padding: 2rem;
-        background-image: none;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-      .top-image{
-        display: block;
-        width: 100%;
-        height: auto;
-        border-radius: 4px;
-    }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    background-image: none;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .top-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
   main {
     grid-template-columns: 1fr;
   }
 
   .weather-icon {
     display: block;
-    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
   }
 
   .weather-info {
