@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Calculate wind chill
     const windChill = calculateWindChill(temperature, windSpeed);
   
-    // Get the wind chill element and update it with calculated value
+  
     const windChillElement = document.querySelector(".wind-chill");
     windChillElement.textContent =
       windChill !== "N/A" ? `${windChill.toFixed(1)}°C` : "N/A";
