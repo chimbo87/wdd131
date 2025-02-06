@@ -1,0 +1,112 @@
+/* Base Styles */
+:root {
+    --primary-color: #4A148C;
+    --secondary-color: #00796B;
+    --text-color: #333;
+    --background-color: #f5f5f5;
+    --white: #fff;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color);
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+/* Sections */
+section {
+    background-color: var(--white);
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+/* Site Name */
+.highlight {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Scenarios */
+.scenario {
+    border-left: 4px solid var(--secondary-color);
+    margin: 20px 0;
+    padding: 10px 20px;
+}
+
+/* Color Schema */
+.color-sample {
+    margin: 20px 0;
+}
+
+.color-box {
+    border: 1px solid var(--text-color);
+    height: 50px;
+    margin: 10px 0;
+    width: 100px;
+}
+
+.color-box.primary {
+    background-color: var(--primary-color);
+}
+
+.color-box.secondary {
+    background-color: var(--secondary-color);
+}
+
+/* Typography Samples */
+.font-sample {
+    margin: 20px 0;
+}
+
+/* Wireframes */
+.wireframe-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.wireframe-mobile,
+.wireframe-desktop {
+    flex: 1 1 300px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    color: var(--primary-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    section {
+        padding: 15px;
+    }
+}
