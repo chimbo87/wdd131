@@ -9,16 +9,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const productSelect = document.getElementById('productName');
 
-    // Clear any existing options except the first placeholder
+   
     while (productSelect.options.length > 1) {
         productSelect.remove(1);
     }
 
-    // Populate the select element with product options
+   
     products.forEach(product => {
         const option = document.createElement('option');
-        option.value = product.id; // Use the product ID as the value
-        option.textContent = product.name; // Use the product name as the display text
+        option.value = product.id; 
+        option.textContent = product.name; 
         productSelect.appendChild(option);
     });
 });
