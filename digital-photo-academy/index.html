@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Photography Academy - Learn Photography at Any Level</title>
+    <meta
+      name="description"
+      content="Join our photography courses for all skill levels. Learn digital photography, get equipment reviews, and grow your photography business."
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Digital Photography Academy</h1>
+        </div>
+        <nav id="main-nav">
+          <button id="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul id="nav-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="resources.html">Business Resources</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero">
+        <div class="container">
+          <h2>Master the Art of Digital Photography</h2>
+          <p>
+            Structured courses, expert mentoring, and resources for
+            photographers at every level
+          </p>
+          <a href="#courses-preview" class="cta-button">Explore Courses</a>
+        </div>
+      </section>
+
+      <!-- Courses Preview Section -->
+      <section id="courses-preview">
+        <div class="container">
+          <h2>Photography Courses for All Levels</h2>
+          <div class="courses-grid">
+            <div class="course-card" data-course-level="beginner">
+              <div class="course-image">
+                <img src="images/photo5.jpeg" />
+              </div>
+              <h3>Digital Photography Fundamentals</h3>
+              <p>
+                Master the basics of your camera and learn the fundamental
+                principles of photography.
+              </p>
+              <a href="courses.html#beginner" class="secondary-button"
+                >Learn More</a
+              >
+            </div>
+            <div class="course-card" data-course-level="intermediate">
+              <div class="course-image">
+                <img src="images/photo6.jpeg" />
+              </div>
+              <h3>Advanced Composition & Lighting</h3>
+              <p>
+                Take your skills to the next level with advanced composition
+                techniques and lighting mastery.
+              </p>
+              <a href="courses.html#intermediate" class="secondary-button"
+                >Learn More</a
+              >
+            </div>
+            <div class="course-card" data-course-level="advanced">
+              <div class="course-image">
+                <img src="images/photo7.jpeg" />
+              </div>
+              <h3>Professional Portfolio Development</h3>
+              <p>
+                Build a stunning portfolio and learn the business side of
+                professional photography.
+              </p>
+              <a href="courses.html#advanced" class="secondary-button"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="more-courses">
+            <a href="courses.html" class="cta-button">View All Courses</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Equipment Reviews Section -->
+      <section id="equipment-reviews">
+        <div class="container">
+          <h2>Equipment Reviews & Recommendations</h2>
+          <div class="reviews-slider">
+            <div class="review-card">
+              <div class="review-image">
+                <img src="images/photo2.jpeg" />
+              </div>
+              <h3>Best Entry-Level DSLR Cameras in 2025</h3>
+              <p>
+                Our comprehensive review of the top beginner-friendly DSLR
+                cameras that won't break the bank.
+              </p>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="count">(42 ratings)</span>
+              </div>
+              <a href="#" class="read-more">Read Full Review</a>
+            </div>
+            <div class="review-card">
+              <div class="review-image">
+                <img src="images/photo3.jpeg" />
+              </div>
+              <h3>Top 5 Lenses for Portrait Photography</h3>
+              <p>
+                Discover the best lenses for capturing stunning portraits across
+                different price points.
+              </p>
+              <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="count">(67 ratings)</span>
+              </div>
+              <a href="#" class="read-more">Read Full Review</a>
+            </div>
+            <div class="review-card">
+              <div class="review-image">
+                <img src="images/photo4.jpeg" />
+              </div>
+              <h3>Essential Lighting Kits for Studio Photography</h3>
+              <p>
+                Compare the most versatile lighting setups for home and
+                professional studios.
+              </p>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="count">(35 ratings)</span>
+              </div>
+              <a href="#" class="read-more">Read Full Review</a>
+            </div>
+          </div>
+          <div class="slider-controls">
+            <button id="prev-review" aria-label="Previous review">
+              <span>←</span>
+            </button>
+            <button id="next-review" aria-label="Next review">
+              <span>→</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Student Gallery Section -->
+      <section id="gallery">
+        <div class="container">
+          <h2>Student Work Gallery</h2>
+          <div class="gallery-grid">
+            <!-- Gallery items will be populated by JavaScript -->
+          </div>
+          <div class="gallery-controls">
+            <button id="load-more-gallery" class="secondary-button">
+              Load More
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials">
+        <div class="container">
+          <h2>What Our Students Say</h2>
+          <div class="testimonials-carousel">
+            <div class="testimonial-card active">
+              <div class="testimonial-content">
+                <p>
+                  "The Digital Photography Academy completely transformed my
+                  hobby into a profession. The structured curriculum and mentor
+                  feedback were invaluable."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMzAiIGZpbGw9IiNlZWUiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiBmaWxsPSIjOTk5Ij5KUzwvdGV4dD48L3N2Zz4="
+                  alt="James Smith"
+                  class="lazy-load"
+                  data-src="images/testimonial-1.jpg"
+                />
+                <div>
+                  <h4>James Smith</h4>
+                  <p>Wedding Photographer</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "As a complete beginner, I was intimidated by my new camera.
+                  The fundamentals course broke everything down perfectly and
+                  now I feel confident in my skills."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMzAiIGZpbGw9IiNlZWUiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiBmaWxsPSIjOTk5Ij5TQzwvdGV4dD48L3N2Zz4="
+                  alt="Sarah Chen"
+                  class="lazy-load"
+                  data-src="images/testimonial-2.jpg"
+                />
+                <div>
+                  <h4>Sarah Chen</h4>
+                  <p>Hobbyist Photographer</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "The business resources and mentoring program helped me launch
+                  my photography business. Within a year, I was fully booked
+                  with clients!"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMzAiIGZpbGw9IiNlZWUiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiBmaWxsPSIjOTk5Ij5NSjwvdGV4dD48L3N2Zz4="
+                  alt="Michael Johnson"
+                  class="lazy-load"
+                  data-src="images/testimonial-3.jpg"
+                />
+                <div>
+                  <h4>Michael Johnson</h4>
+                  <p>Commercial Photographer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-indicators">
+            <button
+              class="indicator active"
+              data-index="0"
+              aria-label="Testimonial 1"
+            ></button>
+            <button
+              class="indicator"
+              data-index="1"
+              aria-label="Testimonial 2"
+            ></button>
+            <button
+              class="indicator"
+              data-index="2"
+              aria-label="Testimonial 3"
+            ></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section id="contact">
+        <div class="container">
+          <h2>Get in Touch</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>Have Questions?</h3>
+              <p>
+                Our team is ready to help you choose the right course or answer
+                any questions about our programs.
+              </p>
+              <div class="contact-methods">
+                <div class="contact-item">
+                  <span class="icon">✉️</span>
+                  <a href="mailto:info@digital-photo-academy.com"
+                    >info@digital-photo-academy.com</a
+                  >
+                </div>
+                <div class="contact-item">
+                  <span class="icon">📱</span>
+                  <a href="tel:+15551234567">(555) 123-4567</a>
+                </div>
+                <div class="contact-item">
+                  <span class="icon">📍</span>
+                  <address>123 Photo Lane, Camera City, PC 12345</address>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form-container">
+              <form id="contact-form" action="#" method="POST">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="interest">I'm interested in:</label>
+                  <select id="interest" name="interest">
+                    <option value="">Select an option</option>
+                    <option value="beginner-courses">Beginner Courses</option>
+                    <option value="intermediate-courses">
+                      Intermediate Courses
+                    </option>
+                    <option value="advanced-courses">Advanced Courses</option>
+                    <option value="business-resources">
+                      Business Resources
+                    </option>
+                    <option value="mentoring">Professional Mentoring</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message">Your Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
+                <div class="form-group consent-checkbox">
+                  <input type="checkbox" id="consent" name="consent" required />
+                  <label for="consent"
+                    >I agree to be contacted about Digital Photography Academy
+                    courses and resources</label
+                  >
+                </div>
+                <button type="submit" class="cta-button">Send Message</button>
+                <div id="form-status" class="hide"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>Digital Photography Academy</h2>
+            <p>Empowering photographers at every stage of their journey</p>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="resources.html">Business Resources</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h3>Stay Updated</h3>
+            <p>
+              Subscribe to our newsletter for photography tips and course
+              updates
+            </p>
+            <form id="newsletter-form">
+              <input type="email" placeholder="Your email address" required />
+              <button type="submit" class="secondary-button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Digital Photography Academy. All rights reserved.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><span>Facebook</span></a>
+            <a href="#" aria-label="Instagram"><span>Instagram</span></a>
+            <a href="#" aria-label="YouTube"><span>YouTube</span></a>
+            <a href="#" aria-label="Pinterest"><span>Pinterest</span></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/lazy-loading.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
